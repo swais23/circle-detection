@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 @click.command()
 @click.option("--image_dir", default="images", help="Directory containing images.")
-@click.option("--output_dir", default="tests", help="Directory to save processed images.")
+@click.option("--output_dir", default="processed-images", help="Directory to save processed images.")
 @click.option("--blur_ksize", default=11, help="Kernel size for Gaussian blur (must be odd).")
 @click.option("--canny_threshold1", default=25, help="First threshold for Canny edge detection.")
 @click.option("--canny_threshold2", default=150, help="Second threshold for Canny edge detection.")
