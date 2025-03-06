@@ -1,0 +1,10 @@
+services:
+  circle-detection:
+    build: .
+    container_name: circle-detection
+    volumes:
+      - ./src:/src
+      - ./requirements:/requirements
+    command: /bin/bash
+    stdin_open: true
+    tty: true
