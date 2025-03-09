@@ -3,7 +3,7 @@ services:
     build: .
     container_name: circle-detection
     volumes:
-      - ./src:/src
+      - ./app:/app
       - ./requirements:/requirements
     command: /bin/bash
     stdin_open: true
