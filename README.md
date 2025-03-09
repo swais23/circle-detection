@@ -30,7 +30,7 @@ make compile-requirements
 
 ## **Using the Circle Detection Script**
 
-The main script for detecting circles is located in `src/detect_circles.py`. It allows parameter customization using CLI arguments.
+The main script for detecting circles is located in `app/detect_circles.py`. It allows parameter customization using CLI arguments.
 
 ### **Running the Script**
 
@@ -62,12 +62,12 @@ python detect_circles.py --image_dir images --output_dir processed-images \
 ├── Dockerfile
 ├── docker-compose.yaml
 ├── Makefile
-├── images/               # Directory containing input images
-├── processed-images/     # Output directory for processed images
 ├── requirements/         # Dependencies
 │   ├── requirements.in
 |   ├── requirements.txt
-├── src/
+├── app/
 │   ├── detect_circles.py # Main script for circle detection
+|   ├── images/           # Directory containing input images
+|   ├── processed-images/ # Output directory for processed images
 ├── README.md
 ```
